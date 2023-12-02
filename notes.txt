@@ -1,0 +1,10 @@
+Making a smartcontract lottery
+
+Drafting:
+1. Raffle
+2. Enter the lottery (By paying some amount)
+3. Pick a random winner (verifiably random)
+4. Winner is selected ever X minutes -> Automate this process
+5. Use Chainlink oracle -> Verifiably random, Automate execution (chainlink keepers)
+
+Left off at 14:02:31 - Introduction to Chainlink VRF
