@@ -7,4 +7,50 @@ Drafting:
 4. Winner is selected ever X minutes -> Automate this process
 5. Use Chainlink oracle -> Verifiably random, Automate execution (chainlink keepers)
 
-Left off at 14:02:31 - Introduction to Chainlink VRF
+Notes:
+Going more into depth about Chainlink VRF v2 and Chainlink Keepers.
+Learning how to use VRF
+
+IMPORT CHAINLINK/CONTRACTS steps:
+- To import a git repo, like with Chainlink, use the npm commmand and you can now use
+the functions that are a part of that repository:
+
+npm add --include @chainlink/contracts
+
+- Then we add the chainlink contract to our Raffle.sol and use the VRFConsumerBaseV2 
+abstract contract to gain access to our ability to get a random number function.
+
+** Run this command to be sure the contract compile correctly : npx hardhat compile 
+
+
+The requestRandomWords() from the VRFConsumerBaseV2 contract :
+function requestRandomWords()
+        external
+        onlyOwner
+        returns (uint256 requestId)
+    {
+        // Will revert if subscription is not set and funded.
+        requestId = COORDINATOR.requestRandomWords(
+            keyHash,
+            s_subscriptionId,
+            requestConfirmations,
+            callbackGasLimit,
+            numWords
+        );
+        s_requests[requestId] = RequestStatus({
+            randomWords: new uint256[](0),
+            exists: true,
+            fulfilled: false
+        });
+        requestIds.push(requestId);
+        lastRequestId = requestId;
+        emit RequestSent(requestId, numWords);
+        return requestId;
+    }
+
+- View this function rewritten in Raffle.sol
+
+
+LEARNING CHAINLINK KEEPERS
+
+Left off at 14.28.28
