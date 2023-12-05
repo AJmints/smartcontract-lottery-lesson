@@ -53,4 +53,20 @@ function requestRandomWords()
 
 LEARNING CHAINLINK KEEPERS
 
-Left off at 14.28.28
+We need a check upkeep and perform upkeep function for our contract.
+
+CheckUpKeepFunction() = checks to see if it is time to get a random number to update the recent winner and send them the funds
+
+For the import, the location changed for KeepersCompatibleInterface. It is located under @chainlink/contracts/src/v0.8/automation/interfaces/KeepersCompatibleInterface.sol
+
+When getting a timestamp, Solidity has a built in tool. `block.timestamp`
+
+
+OTHER Notes
+
+If variable is a constant, when making a getter that is associated with it, you have to say `pure` instead of `view`. view is used with state variables.
+
+
+DEPLOYING RAFFLE.SOL
+
+Left off at 14:56:01
