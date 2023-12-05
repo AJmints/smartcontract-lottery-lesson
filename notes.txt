@@ -69,4 +69,18 @@ If variable is a constant, when making a getter that is associated with it, you 
 
 DEPLOYING RAFFLE.SOL
 
-Left off at 14:56:01
+Refresh how to set up automated deployments.
+
+Set up the deploy scripts. Will need to update hardhat.config.js and need to create a helper-hardhat-config.js. 
+
+We need to set up a mock for VRFCoordinator under the contracts folder and make a test folder to import the mock that Chainlink has prepared.
+
+Compile the contracts to make sure everything compiles fine. 
+
+CONTINUED
+
+Now we need to fill in all the args for the constructor. We have to feed it the address for vrfCoordinatorV2. Then we have to give it a uint256 for entranceFee, 
+
+NOW WE NEED TO GIVE IT A GASLANE (Left off at)
+
+Left off at 15:12:01

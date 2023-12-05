@@ -144,6 +144,225 @@
       "artifacts": [
         "AutomationCompatibleInterface"
       ]
+    },
+    "/home/ajmints/code/solidity/smartcontract-lottery/node_modules/@chainlink/contracts/src/v0.8/mocks/VRFCoordinatorV2Mock.sol": {
+      "lastModificationDate": 1701717794775,
+      "contentHash": "1b32d1c8f5a318a9386343e17cbd490b",
+      "sourceName": "@chainlink/contracts/src/v0.8/mocks/VRFCoordinatorV2Mock.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../shared/interfaces/LinkTokenInterface.sol",
+        "../interfaces/VRFCoordinatorV2Interface.sol",
+        "../vrf/VRFConsumerBaseV2.sol",
+        "../shared/access/ConfirmedOwner.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "VRFCoordinatorV2Mock"
+      ]
+    },
+    "/home/ajmints/code/solidity/smartcontract-lottery/node_modules/@chainlink/contracts/src/v0.8/shared/interfaces/LinkTokenInterface.sol": {
+      "lastModificationDate": 1701717794715,
+      "contentHash": "d10c0d716a0f43bb442c14effc9bd39f",
+      "sourceName": "@chainlink/contracts/src/v0.8/shared/interfaces/LinkTokenInterface.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "LinkTokenInterface"
+      ]
+    },
+    "/home/ajmints/code/solidity/smartcontract-lottery/node_modules/@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwner.sol": {
+      "lastModificationDate": 1701717794635,
+      "contentHash": "16d64572b0310127fc8a771e63be6d20",
+      "sourceName": "@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwner.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ConfirmedOwnerWithProposal.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ConfirmedOwner"
+      ]
+    },
+    "/home/ajmints/code/solidity/smartcontract-lottery/node_modules/@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwnerWithProposal.sol": {
+      "lastModificationDate": 1701717794635,
+      "contentHash": "56723eba6ecc747fee92c5ab5b0bbf7f",
+      "sourceName": "@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwnerWithProposal.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IOwnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ConfirmedOwnerWithProposal"
+      ]
+    },
+    "/home/ajmints/code/solidity/smartcontract-lottery/node_modules/@chainlink/contracts/src/v0.8/shared/interfaces/IOwnable.sol": {
+      "lastModificationDate": 1701717794705,
+      "contentHash": "b3ae9b7345205a0a65f3e0f89c176d88",
+      "sourceName": "@chainlink/contracts/src/v0.8/shared/interfaces/IOwnable.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IOwnable"
+      ]
+    },
+    "/home/ajmints/code/solidity/smartcontract-lottery/contracts/test/VRFCoordinatorV2Mocks.sol": {
+      "lastModificationDate": 1701807650806,
+      "contentHash": "22bc41bedd8bfa4a6e4bba0790bd51fd",
+      "sourceName": "contracts/test/VRFCoordinatorV2Mocks.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@chainlink/contracts/src/v0.8/mocks/VRFCoordinatorV2Mock.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
     }
   }
 }
