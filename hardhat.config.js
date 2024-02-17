@@ -1,4 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox")
+require("hardhat-deploy")
 require("dotenv").config()
 
 const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL
