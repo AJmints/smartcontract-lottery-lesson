@@ -13,7 +13,6 @@ module.exports = async function({ getNamedAccounts, deployments }) {
     
 
     if (developmentChains.includes(network.name)) {
-        console.log(await ethers.getContractAt("VRFCoordinatorV2Mock"))
         const VRFCoordinatorV2Mock = await ethers.getContractAt("VRFCoordinatorV2Mock") // Thought this was a fix, but doesn't work: This might break. If so, replace ethers.getContractAt with deployments.get
         vrfCoordinatorV2Address = VRFCoordinatorV2Mock.address
         const transactionResponse = await VRFCoordinatorV2Mock.createSubscription()
